@@ -156,6 +156,11 @@ footer .fa-brands:hover {
   .index-container {
     text-align: center;
   }
+
+  footer .container {
+    padding: 20px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 450px) {
@@ -165,6 +170,10 @@ footer .fa-brands:hover {
   }
   h1 {
     font-size: 48px;
+  }
+
+  h2 {
+    font-size: 34px;
   }
 
   .index-container h2 {
@@ -178,5 +187,23 @@ footer .fa-brands:hover {
   .index-container p {
     line-height: 2;
     opacity: 1;
+  }
+
+  footer .container h2 {
+    font-size: 40px;
+  }
+
+  footer .container p {
+    font-size: 14px;
+  }
+
+  footer .social-links .mailto {
+    font-size: 24px;
+  }
+
+  footer .social-links .mailto:hover {
+    background-color: var(--third-color);
+    border-radius: 10px;
+    padding: 5px 10px;
   }
 }
