@@ -2,17 +2,25 @@
   --branding-color: #545454;
   --second-color: #8f8f8f;
   --third-color: #cecccc;
+  --font-family-main: "Poppins", sans-serif;
+  --font-family-add: "Playfair Display", serif;
+  --transition: all 150ms ease-in-out;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family-main);
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-family-add);
   font-size: 64px;
   font-weight: 700;
   line-height: 1.5;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
 }
 
 h3 {
@@ -26,6 +34,10 @@ h4 {
   line-height: 2;
 }
 
+h5 {
+  font-size: 18px;
+}
+
 p {
   font-size: 16px;
   opacity: 0.7;
@@ -34,6 +46,24 @@ p {
 
 img {
   border-radius: 15px;
+}
+
+.hero {
+  background: var(--third-color);
+  padding: 150px 0 80px 0;
+}
+
+.hero h1 {
+  font-size: 96px;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+.hero .btn-branding {
+  margin: 30px;
+  padding: 20px 30px;
 }
 
 .container {
@@ -48,7 +78,80 @@ img {
   background-color: var(--branding-color);
   color: white;
   padding: 15px 20px;
-  transition: all 150ms ease-in-out;
+  transition: var(--transition);
+}
+
+.index-small-text {
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+.index-container {
+  margin: 80px auto;
+}
+
+.index-content h2 {
+  font-family: var(--font-family-add);
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.index-content .btn-second {
+  border-color: var(--branding-color);
+  color: var(--branding-color);
+  padding: 15px 20px;
+  transition: var(--transition);
+}
+
+.index-content .btn-second:hover {
+  color: white;
+  background-color: var(--branding-color);
+}
+
+footer h2 {
+  font-family: var(--font-family-add);
+  font-size: 48px;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+footer .container {
+  background-color: var(--third-color);
+  margin: 100px auto;
+  padding: 30px 80px;
+  border-radius: 20px;
+}
+
+footer .social-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+footer .mailto:hover {
+  color: var(--branding-color);
+}
+
+footer .fa-brands {
+  padding: 12px 14px;
+  border: 1px solid var(--third-color);
+  border-radius: 50%;
+  background-color: var(--third-color);
+  transition: var(--transition);
+}
+
+footer .fa-brands:hover {
+  background: white;
+  color: #000;
+  border: 1px solid #000;
+}
+
+@media (max-width: 950px) {
+  .index-container {
+    text-align: center;
+  }
 }
 
 @media (max-width: 450px) {
@@ -58,5 +161,18 @@ img {
   }
   h1 {
     font-size: 48px;
+  }
+
+  .index-container h2 {
+    font-size: 44px;
+  }
+
+  .index-container img {
+    display: none;
+  }
+
+  .index-container p {
+    line-height: 2;
+    opacity: 1;
   }
 }
