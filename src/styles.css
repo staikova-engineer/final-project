@@ -148,6 +148,10 @@ footer .fa-brands:hover {
   border: 1px solid #000;
 }
 
+.finished-with p {
+  font-size: 12px;
+}
+
 @media (max-width: 950px) {
   .index-container {
     text-align: center;
